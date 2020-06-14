@@ -1,15 +1,30 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 10px;
+}
 
-   .header {
-    width: 950px;
-    height: 100px;
+  .header {
+    width: 100%;
     border-radius: 10px;
+    height: 100px;
     display: inline-block;
-    background-color: rgb(67, 218, 197);
-    color: azure;
-    padding: 10px;
+    background-color: rgb(4, 138, 120);
+    color: #ffffff;
   }
 
-  .App {
-    font-family: sans-serif;
-    text-align: center;
+  .filtros {
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    display: inline-block;
+    background-color: rgba(127, 148, 5, 0.63);
+    color: #ffffff;
+  }
+  .hoteles {
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    display: inline-block;
+    color: #000000;
   }

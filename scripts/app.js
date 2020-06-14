@@ -21,13 +21,17 @@ const Header = () =>{
 
 const Filtros = () =>{
     return(
-        <h1>Filtros</h1>
+        <div className="filtros">
+        <h3>Filtros</h3>
+        </div>
     )
     }
 
 const Hoteles = () =>{
     return(
-        <h1>Hoteles</h1>
+        <div className="hoteles">
+            <h3>Hoteles</h3>
+        </div>
     )
 }
   
