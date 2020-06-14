@@ -1,9 +1,11 @@
-class App extends React.Component{
-render(){
-    return(
-            <h1>Prueba</h1>
-    )
-}
-}
-
-ReactDOM.render(<App />, document.getElementById('app'));
+function App() {
+    return (
+      <div className="App">
+        <h1>Prueba Hoteles</h1>
+      </div>
+    );
+  }
+  
+  const rootElement = document.getElementById("app");
+  ReactDOM.render(<App />, rootElement);
+  
