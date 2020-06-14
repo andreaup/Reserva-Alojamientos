@@ -2,7 +2,6 @@
 function App() {
     return (
         <div className="App">
-        <h1>Prueba Hoteles</h1>
         <Header />
         <Filtros />
         <Hoteles />
@@ -13,7 +12,10 @@ function App() {
 
 const Header = () =>{
     return(
-        <h1>Header</h1>
+        <div className="header">
+        <h2>Hoteles</h2>
+        <h4>Desde el martes, 1 de enero de 2019 hasta el miércoles, 2 de enero de 2019</h4>
+        </div>
     )
 }
 
