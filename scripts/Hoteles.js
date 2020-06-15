@@ -17,6 +17,6 @@ class Hoteles extends React.Component {
             price={product.price}
             />
         ));
-        return <div className="ui unstackable items">{productComponents}</div>;
+        return <div className="ui unstackable items hoteles">{productComponents}</div>;
     }
 }
