@@ -5,7 +5,7 @@ function Hotel(props){
                 <img src={props.photo} alt="hotel" />
               </div>
                 <div className="description">
-                    <p>{props.name}</p>
+                    <p><b>{props.name}</b></p>
                     <p>{props.description}</p>
                     <p>{props.city}, {props.country}</p>
                     <p>{props.rooms} Habitaciones</p>

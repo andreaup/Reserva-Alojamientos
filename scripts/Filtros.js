@@ -4,35 +4,30 @@ class Filtros extends React.Component {
     };
     render(){
         return (
-            <div>
-
             <div className="filtros">
-                <input
-                type = "date"
-                // value={this.state.username}
-                // onChange={this.updateInput}
-                />
-                 <input
-                type = "date"
-                />
-                <select>
-                    <option>New York </option>
-                    <option>Bucarest</option>
-                    <option>Madrid</option>
+                <input type = "date" id="InitialDate"/>
+                 <input type = "date" id="EndDate" />
+                <select id="pais">
+                    <option value= "allCountry">Todos los países </option>
+                    <option value= "argentina">Argentina</option>
+                    <option value= "brasil">Brasil</option>
+                    <option value= "chile">Chile</option>
+                    <option value= "uruguay">Uruguay</option>
                 </select>
-                <select>
-                    <option>$ </option>
-                    <option>$$</option>
-                    <option>$$$</option>
-                    <option>$$$$</option>
+                <select id ="precio">
+                    <option value = "anyPrice">Cualquier precio</option>
+                    <option value = "1">$ </option>
+                    <option value = "2">$$</option>
+                    <option value = "3">$$$</option>
+                    <option value = "4">$$$$</option>
                 </select>
-                <select>
-                    <option>Hotel pequeño</option>
-                    <option>Hotel mediano</option>
-                    <option>Hotel grande</option>
+                <select id ="categoria">
+                    <option value = "anySize">Cualquier tamaño</option>
+                    <option value = "hotelPequeño">Hotel pequeño</option>
+                    <option value = "hotelMediano">Hotel mediano</option>
+                    <option value = "hotelGrande">Hotel grande</option>
                 </select>
             </div>
-        </div>
         )
     }
 }
