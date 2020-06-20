@@ -6,7 +6,6 @@ class App extends React.Component {
             <Header />
             <Filtros />
             <Hoteles />
-
             </div>
         );
     }

@@ -1,13 +1,21 @@
 class Filtros extends React.Component {
     state={
-
+        initialDate: "",
+        endDate: "",
+        price: "",
+        category: ""
     };
+
+    getInitialDate = e =>{
+        const {value} = e.target;
+        this.setState({initialDate : value})
+    }
     render(){
         return (
             <div className="filtros">
                 <input type = "date" id="InitialDate"/>
                  <input type = "date" id="EndDate" />
-                <select id="pais">
+                <select id="pais" onChange={this.getInitialDate}>
                     <option value= "allCountry">Todos los países </option>
                     <option value= "argentina">Argentina</option>
                     <option value= "brasil">Brasil</option>
