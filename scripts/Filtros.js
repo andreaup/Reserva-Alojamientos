@@ -1,9 +1,25 @@
 class Filtros extends React.Component {
     state={
-        initialDate: "",
-        endDate: "",
-        price: "",
-        category: ""
+        countries: [
+            { value: -1, name: "Todos los paises" },
+            { value: "Argentina", name: "Argentina" },
+            { value: "Brasil", name: 'Brasil' },
+            { value: "Chile", name: 'Chile' },
+            { value: "Colombia", name: "Colombia" },
+          ],
+          prices: [
+            { value: -1, name: "Todos los precios" },
+            { value: 1, name: "$" },
+            { value: 2, name: "$$" },
+            { value: 3, name: "$$$" },
+            { value: 4, name: "$$$$" },
+          ],
+          sizes: [
+            { value: -1, name: "Todos los tamaños" },
+            { value: 1, name: "Hotel Pequeño" },
+            { value: 2, name: "Hotel Mediano" },
+            { value: 3, name: "Hotel Grande" },
+          ],
     };
 
     getInitialDate = e =>{
@@ -15,26 +31,35 @@ class Filtros extends React.Component {
             <div className="filtros">
                 <input type = "date" id="InitialDate"/>
                  <input type = "date" id="EndDate" />
-                <select id="pais" onChange={this.getInitialDate}>
-                    <option value= "allCountry">Todos los países </option>
-                    <option value= "argentina">Argentina</option>
-                    <option value= "brasil">Brasil</option>
-                    <option value= "chile">Chile</option>
-                    <option value= "uruguay">Uruguay</option>
-                </select>
-                <select id ="precio">
-                    <option value = "anyPrice">Cualquier precio</option>
-                    <option value = "1">$ </option>
-                    <option value = "2">$$</option>
-                    <option value = "3">$$$</option>
-                    <option value = "4">$$$$</option>
-                </select>
-                <select id ="categoria">
-                    <option value = "anySize">Cualquier tamaño</option>
-                    <option value = "hotelPequeño">Hotel pequeño</option>
-                    <option value = "hotelMediano">Hotel mediano</option>
-                    <option value = "hotelGrande">Hotel grande</option>
-                </select>
+                    <select>
+                    {this.state.countries.map((option) => {
+                      return (
+                        <option key={option.value} value={option.value}>
+                          {option.name}
+                        </option>
+                      );
+                    })}
+                    </select>
+
+                    <select>
+                 {this.state.prices.map((option) => {
+                      return (
+                        <option key={option.value} value={option.value}>
+                          {option.name}
+                        </option>
+                      );
+                    })}
+                    </select>
+                    
+                    <select>
+                 {this.state.sizes.map((option) => {
+                      return (
+                        <option key={option.value} value={option.value}>
+                          {option.name}
+                        </option>
+                      );
+                    })}
+                    </select>
             </div>
         )
     }
