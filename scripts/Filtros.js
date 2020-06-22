@@ -1,6 +1,5 @@
 class Filtros extends React.Component {
     state={
-        initialDate: "",
         countries: [
             { value: -1, name: "Todos los paises" },
             { value: "Argentina", name: "Argentina" },
@@ -23,34 +22,19 @@ class Filtros extends React.Component {
           ],
     };
 
-    // formatDate = (date) =>{
-    //     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
-    //     let d = new Date(date).toLocaleString("es-CO", options);
-    //     return (
-    //       <span>
-    //         {d}
-    //       </span>
-    //     )
-    //   }
-
-
-
-    getInitialDate = e =>{
-        const {value} = e.target;
-        this.setState({initialDate : value})
-        console.log(value)
-    }
     render(){
         return (
             <div className="filtros">
                 <input
                 type = "date" 
-                id="InitialDate"
-                onChange={this.getInitialDate}
+                name = "InitialDate"
+                onChange={this.props.handleChange}
                 />
                  <input
                  type = "date"
-                 id="EndDate" />
+                 name = "EndDate" 
+                 onChange={this.props.handleChange}
+                 />
                     
                     <select 
                     name = "countries"
