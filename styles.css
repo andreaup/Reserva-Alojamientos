@@ -51,6 +51,14 @@
     font-weight: bold;
     border-radius: 10px;
   }
+  .juntos{
+    display: flex;
+    text-align: center;
+  }
+
+  .porcentaje{
+    width: 50%;
+  }
   select{
       font-size: 14px;
       font-family: 'Verdana', sans-serif;

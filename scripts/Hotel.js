@@ -7,9 +7,12 @@ function Hotel(props){
                 <div className="description">
                     <p><b>{props.name}</b></p>
                     <p>{props.description}</p>
-                    <p>{props.city}, {props.country}</p>
-                    <p>{props.rooms} Habitaciones</p>
-                    <p>{props.price} : rango precio </p>
+                    <p><i className="fa fa-map-marker" aria-hidden="true"></i> {props.city}, {props.country}</p>
+                    
+                    <div className="juntos" >
+                    <p className="porcentaje"><i className="fa fa-bed" aria-hidden="true"></i> {props.rooms} Habitaciones</p>
+                    <p className="porcentaje"><i className="fa fa-usd" aria-hidden="true"></i> {props.price} </p>
+                    </div>
                     <button
                         id="btn"
                         className="btn"
