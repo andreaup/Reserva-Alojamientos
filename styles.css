@@ -51,12 +51,12 @@
     font-weight: bold;
     border-radius: 10px;
   }
-  .juntos{
+  .bothElements{
     display: flex;
-    text-align: center;
+    width: 50%;
   }
 
-  .porcentaje{
+  .percentage{
     width: 50%;
   }
   select{
@@ -87,3 +87,7 @@
     border-radius: .3em;
     margin: 10px 10px;
     }  
+    .description{
+      text-align: left;
+      padding: 15px;
+    }

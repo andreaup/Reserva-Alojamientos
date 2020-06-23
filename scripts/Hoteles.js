@@ -68,7 +68,8 @@ class Hoteles extends React.Component {
         moment(this.state.initialDateFormat).diff(new Date(new Date(item.availabilityFrom).toLocaleDateString()), 'day') >= 0)
         || moment(moment(this.state.initialDateFormat)).isBetween(
           new Date(new Date(item.availabilityFrom).toLocaleDateString()), 
-          new Date(new Date(item.availabilityTo).toLocaleDateString()))) &&
+          new Date(new Date(item.availabilityTo).toLocaleDateString()))) 
+          &&
       ( this.state.endDateFormat == "" || item.availabilityTo > new Date(this.state.endDateFormat).valueOf())
       )
     .map((hotel, index) => (
