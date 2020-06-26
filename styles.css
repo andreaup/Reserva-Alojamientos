@@ -53,7 +53,7 @@
   }
   .bothElements{
     display: flex;
-    width: 50%;
+    width: 100%;
   }
 
   .percentage{
