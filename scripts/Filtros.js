@@ -35,8 +35,7 @@ class Filtros extends React.Component {
                  name = "EndDate" 
                  onChange={this.props.handleChange}
                  />
-                    
-                    <select 
+                    <select
                     name = "countries"
                     onChange ={this.props.handleChange}>
                     {this.state.countries.map((option) => {
@@ -47,7 +46,6 @@ class Filtros extends React.Component {
                       );
                     })}
                     </select>
-
                     <select
                     name = "prices"
                     onChange = {this.props.handleChange}>
